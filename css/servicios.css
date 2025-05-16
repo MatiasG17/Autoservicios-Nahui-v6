@@ -1,0 +1,95 @@
+/* --------------------- SERVICIOS --------------------- */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #e6e6e6;
+    width: 250px;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card h3 {
+    color: #cc0000;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #333;
+}
+
+/* -------------------- SERVICIO SELECCIONADO -------------------- */
+.servicio-seleccionado {
+    background-color: white;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .servicio-seleccionado h2 {
+    color: #003366; /* Mismo azul de otros títulos */
+    margin-bottom: 20px;
+  }
+  
+  /* Subtítulo del servicio seleccionado */
+.subtitulo-servicio {
+    font-weight: bold;         
+    color: black;              
+    font-size: 1.2rem;         
+    text-align: center;
+    margin-bottom: 10px;       
+    margin-top: 10px;          
+  }
+  
+  .btn-limpiar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-limpiar:hover {
+    background-color: #e65c00;
+  }
+  
+  .oculto {
+    display: none;
+  }
+  
+  /* ==== DETALLE DE SERVICIO SELECCIONADO ==== */
+.servicio-detalle {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  }
+  
+  .imagen-servicio {
+    width: 500px;        
+    max-width: 90%;      
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+  }
