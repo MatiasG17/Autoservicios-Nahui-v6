@@ -1,0 +1,122 @@
+/* ==== SERVICIOS ==== */
+#servicios {
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+}
+
+#servicios h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  flex: 1 1 250px;
+  max-width: 280px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  border-color: #0099cc;
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #cc0000;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #cc0000;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+/* ==== SERVICIO SELECCIONADO ==== */
+.servicio-seleccionado {
+  background-color: white;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicio-seleccionado h2 {
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.subtitulo-servicio {
+  font-weight: bold;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.imagen-servicio {
+  width: 500px;
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto; /* <-- Esto centra horizontalmente */
+  display: block;
+}
+
+.btn-limpiar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left: auto;
+  margin-right: auto; /* <-- Esto también centra horizontalmente */
+  display: block;
+}
+
+.btn-limpiar:hover {
+  background-color: #e65c00;
+}
+
+.oculto {
+  display: none;
+}

@@ -1,0 +1,89 @@
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none !important;
+  }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  /* Menú móvil (recuadro azul claro) */
+  .menu-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a62cf;
+    padding: 15px 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .menu-mobile.show {
+    display: flex;
+  }
+
+  .menu-mobile .nav-bar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .menu-mobile .nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition: border-bottom 0.3s ease;
+  }
+
+  .menu-mobile .nav-bar a:hover {
+    border-bottom: 2px solid white;
+  }
+
+  /* Redes sociales móviles (fuera del recuadro azul) */
+  .mobile-only {
+    display: flex !important;
+  }
+
+  .mobile-social-icons {
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .mobile-social-icons a {
+    font-size: 22px;
+    color: white;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-social-icons a:hover {
+    color: #ffcc00;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none !important;
+  }
+}

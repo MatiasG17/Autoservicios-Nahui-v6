@@ -1,0 +1,184 @@
+/* --------------------- RESET BÁSICO --------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* === Cabecera principal === */
+.main-header {
+  background-color: #0D47A1;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Nav centrado */
+.nav-bar.desktop-only {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 25px;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-bar a:hover {
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+/* Redes sociales a la derecha */
+.header-social.desktop-only {
+  display: flex;
+  gap: 15px;
+}
+
+.header-social a i {
+  font-size: 20px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.header-social a:hover i {
+  color: #ffcc00;
+}
+
+/* Botón hamburguesa solo visible en móviles */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+}
+
+/* Oculta menú móvil en escritorio */
+.menu-mobile {
+  display: none;
+}
+
+/* -------------------- SECCIONES GENERALES -------------------- */
+section {
+  padding: 60px 40px;
+  background-color: white;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+section h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* --------------------- CONTENIDO --------------------- */
+.contenido-image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 40px;
+}
+
+.contenido-info {
+  font-size: 1.1em;
+  color: #333;
+  text-align: center;
+}
+
+.contenido-info a {
+  color: #0c75e2;
+  text-decoration: none;
+}
+
+.contenido-info a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------- FOOTER --------------------- */
+footer {
+  background-color: #0D47A1;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+footer .logo-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  height: 40px;
+}
+
+footer .social-footer {
+  margin-top: 15px;
+}
+
+footer .social-footer a {
+  color: white;
+  margin-left: 15px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+footer .social-footer a:hover {
+  color: #ffcc00;
+}
+
+/* -------------------- BOTÓN FLOTANTE WHATSAPP -------------------- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 26px;
+  padding: 15px;
+  border-radius: 50%;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.whatsapp-float:hover {
+  background-color: #1ebe5d;
+}
